@@ -1,63 +1,93 @@
-
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Undangan Pernikahan Abay & Yuda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1516726817505-f5ed8252f70b?fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 40px 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 60px 30px;
       text-align: center;
+      position: relative;
     }
     h1 {
-      font-size: 2.5em;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
       margin-bottom: 10px;
     }
-    .date, .location {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-    .invitation {
-      font-style: italic;
-      margin: 30px 0;
-      font-size: 1.3em;
-    }
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
-    }
-    audio {
-      display: block;
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #fff;
       margin: 20px auto;
     }
+    .invitation {
+      font-size: 1.4em;
+      margin: 30px 0;
+      font-style: italic;
+    }
+    .details {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+    audio {
+      margin-top: 30px;
+    }
+    .flower {
+      position: absolute;
+      width: 80px;
+      opacity: 0.6;
+    }
+    .flower.top-left { top: 10px; left: 10px; transform: rotate(-20deg); }
+    .flower.top-right { top: 10px; right: 10px; transform: rotate(20deg); }
+    .flower.bottom-left { bottom: 10px; left: 10px; transform: rotate(20deg); }
+    .flower.bottom-right { bottom: 10px; right: 10px; transform: rotate(-20deg); }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="overlay"></div>
+  <img class="flower top-left" src="https://www.svgrepo.com/show/34393/flower.svg" alt="flower">
+  <img class="flower top-right" src="https://www.svgrepo.com/show/34393/flower.svg" alt="flower">
+  <img class="flower bottom-left" src="https://www.svgrepo.com/show/34393/flower.svg" alt="flower">
+  <img class="flower bottom-right" src="https://www.svgrepo.com/show/34393/flower.svg" alt="flower">  <div class="container">
     <h1>Abay & Yuda</h1>
-    <p class="invitation">Dengan penuh sukacita, kami mengundang Anda untuk hadir di acara pernikahan kami</p>
-    <p class="date">Senin, 1 Januari 2025</p>
-    <p class="location">SMAN 01 Cibinong</p>
-    <p>Datang ya!</p>
+    <div class="divider"></div>
+    <p class="invitation">Dengan penuh cinta, kami mengundang Anda untuk menghadiri hari bahagia kami</p>
+    <p class="details">
+      Senin, 1 Januari 2025<br>
+      SMAN 01 Cibinong<br>
+      Datang ya!
+    </p>
     <audio controls autoplay loop>
       <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
       Lagu tidak tersedia di browser kamu.
     </audio>
     <div class="footer">
-      Terima kasih atas doa dan kehadiran Anda.
+      Terima kasih atas doa dan kehadiran Anda<br>
+      Dengan cinta, Abay & Yuda
     </div>
   </div>
 </body>
